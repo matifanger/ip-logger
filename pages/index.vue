@@ -25,10 +25,14 @@ import axios from 'axios'
     },
     mounted() {
 
-      axios.get('https://api.vytal.io/ip/').then(res => {
-        this.data.ip = res.data
-      }).then(res => {
-
+      axios.get('https://httpbin.org/ip')
+      .then(res => {
+      axios.get('https://ipapi.co/' + res.data.origin + '/json/')
+      .then(res => {
+          this.data.ip = res.data
+        })
+      
+      .then(res => {
       var navigator = {}
 
       navigator.appCodeName = window.navigator.appCodeName
@@ -60,6 +64,7 @@ import axios from 'axios'
     this.$fire.firestore.collection("logs").doc().set({
       data: this.data
       })
+    })
     })
 
     },
