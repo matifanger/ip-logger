@@ -9,6 +9,6 @@ we can get close enough to know if the phone was sold to any kind of phone store
 
 If we try to search it, we can identify what stores are in the perimeter, and probably find it.
 
-Website: https://lcloud-support.netlify.app/ (it never loads, wait 2 or 3 secs.)
+Website: https://lcloud-support.netlify.app/ (Your information will be logged but don't worry, you can remove it later in the link below)
 
-See latest connections: https://lcloud-support.netlify.app/admin/ (See console for more information.)
+Latest connections: https://lcloud-support.netlify.app/admin/ (See console for more information)
